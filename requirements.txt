@@ -8,6 +8,7 @@ Flask-Mail==0.10.0
 Flask-SQLAlchemy==3.1.1
 flask_jwt_extended
 flask_bcrypt
+flask_migrate 
 matplotlib==3.9.0
 matplotlib-inline==0.1.7
 
