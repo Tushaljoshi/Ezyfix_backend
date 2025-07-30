@@ -1,10 +1,13 @@
 import os
-import firebase_admin
-from firebase_admin import credentials, firestore
+import json
+from firebase_admin import credentials, firestore, initialize_app
 
-cred_path = os.getenv("FIREBASE_CREDENTIALS")
-if not cred_path:
+firebase_creds = os.getenv("FIREBASE_CREDENTIALS")
+
+if not firebase_creds:
     raise ValueError("FIREBASE_CREDENTIALS environment variable is not set or is empty.")
-cred = credentials.Certificate(cred_path)
-firebase_admin.initialize_app(cred)
+
+cred = credentials.Certificate(json.loads(firebase_creds))
+default_app = initialize_app(cred)
+
 db = firestore.client()
