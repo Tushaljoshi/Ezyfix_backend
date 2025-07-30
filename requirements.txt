@@ -12,4 +12,5 @@ flask_migrate
 firebase_admin
 matplotlib==3.9.0
 matplotlib-inline==0.1.7
+python-dotenv
 
