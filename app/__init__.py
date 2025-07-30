@@ -21,8 +21,8 @@ def create_app():
                 "http://localhost:5173",
                 "http://localhost:5174",
                 "https://going-realtor-nasa-scheduled.trycloudflare.com",
-                "https://henderson-disposal-useful-modern.trycloudflare.com",
-                "https://reviews-auburn-rescue-extract.trycloudflare.com",
+                "https://ezyfix.in",
+                "https://ezyfix-backend.onrender.com",
             ]}}
         )
 
