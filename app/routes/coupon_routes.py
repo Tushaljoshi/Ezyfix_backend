@@ -32,7 +32,7 @@ def create_coupon():
     if image_file:
         # Save the image to a folder like /static/uploads/
         filename = secure_filename(image_file.filename)
-        upload_folder = os.path.join(current_app.root_path, 'static', 'uploads')
+        file.save(os.path.join(UPLOAD_FOLDER, secure_filename(file.filename)))
         os.makedirs(upload_folder, exist_ok=True)  # create folder if not exist
         file_path = os.path.join(upload_folder, filename)
         image_file.save(file_path)
