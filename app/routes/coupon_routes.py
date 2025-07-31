@@ -38,7 +38,7 @@ def create_coupon():
         image_file.save(file_path)
         
         # URL to access the image
-        image_url = f"/static/uploads/{filename}"
+        image_url = f"https://ezyfix-backend.onrender.com/static/uploads/{filename}"
 
     coupon_data = {
         "title": data.get("couponTitle"),
